@@ -1,0 +1,106 @@
+:root{
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    margin: 0cm 35vw;
+    padding: 0cm ;
+    font-family: 'Silkscreen', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.gametable{
+    text-align: center;
+    background-color: rgba(127, 255, 212, 0.484);
+    color: darkolivegreen;
+  
+    width: 50vh;
+    border-radius: 0.625rem;
+    box-shadow: 0.875rem 0.875rem #0000
+    
+
+}
+
+.board{
+    border-radius: 0.625rem;
+    box-shadow: 0.875rem 0.875rem rgba(0, 0, 0, 0.63);
+    
+    width: 50vh;
+    
+    
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    place-items: center;
+    gap: 0.5rem;
+    padding: 00.5rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(38, 185, 185);
+    border-radius: 0.625rem;
+    width: 5rem;
+    height: 6rem;
+    color: transparent;
+    cursor: pointer;
+
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+
+.resultarea{
+    text-align: center;
+    border-radius: 0.625rem;
+    background-color: rgba(127, 255, 212, 0.484);
+    color: darkolivegreen;
+    width: 50vh;
+}
+
+
+.powered{
+    font-size: 5px;
+    text-align: right;
+    color: rgb(4, 8, 0);
+}
+
+.shadow{
+    
+        border-radius: 0.625rem;
+        box-shadow: 0.875rem 0.875rem rgba(0, 0, 0, 0.63);
+        height: 50vh;
+        width: 50vh;
+}
+
+
+.opencard{
+    color: darkolivegreen;
+    background-color: rgba(255, 68, 0, 0.678);
+    transform: rotateY(0deg);
+}
+
+@media screen and (max-width: 450px) { 
+    .card{
+       
+        width: 20vw;
+        height: 20vw;
+    }
+    
+    
+}
